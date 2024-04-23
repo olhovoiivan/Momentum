@@ -6,7 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/modern-normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
     <title>Momentum</title>
 </head>
@@ -21,23 +22,214 @@
                 <li class="list"><a href="">Download</a></li>
             </ul>
         </nav>
+             <!-- МОБИЛЬНОЕ МЕНЮ -->
+            <button class="menu-open-btn" data-menu-open>
+                <svg width="54" height="36" class="mob-menu-svg">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="mob-menu is-hidden menu" data-menu>
+                <button type="button" class="menu-close-btn" data-menu-close>
+                    <svg class="menu-close-btn" width="19" height="19">
+                        <use href="./images/icons.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                <div class="mob-menu-content">
+                    <ul class="mob-menu-list">
+                        <li class="mob-menu-item">
+                            <a class="menu-link" href="#">About</a>
+                        </li>
+                        <li class="mob-menu-item">
+                            <a class="menu-link" href="#">Features</a>
+                        </li>
+                        <li class="mob-menu-item">
+                            <a class="menu-link" href="#">How to Use</a>
+                        </li>
+                        <li class="mob-menu-item">
+                            <a class="menu-link" href="#">Download</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
     </header>
-    <section class="header">
-        <div>
-        <img src="./images/image.svg" alt="" class="img-hero" >
-        </div>
+    <section class="header header-hero">
+        <img src="./images/image.svg" alt="" class="img-hero" width="652" height="680">
         <div class="frame-one">
         <h1 class="hero">Momentum</h1>
         <h3 class="hero-text">Launch your product — and savor the momentum.</h3>
-        <button>Get the App</button>
+        <button type="button" class="main-button">Get the App</button>
         </div>
     </section>
-    <section></section>
-    <section></section>
+    <section class="section-one">
+    <div class="contener-section-one">
+    <h5 class="text-five">Aenean Consectetur Porta</h5>
+    <h2 class="text-two">Nullam quis risus eget urna mollis
+        <br> ornare vel eu leo.</h2>
+    </div>
+    <img src="./images/image-2.svg" alt="" class="img-sect-one"  width="1200" height="656" >
+    </section>
+    <section class="section-two">
+        <div class="contener">
+            <div class="contener-small">
+            <h5 class="text-five-one">Aenean Consectetur</h5>
+            <h2 class="text-two-one">S</h2>
+            <p class="text-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+            <img src="./images/image-3.jpg" alt=""   width="558" height="637" class="img-cont-one">
+        </div>
+        <div class="contener-two">
+            <img src="./images/image-4.jpg" alt=""   width="558" height="469" class="img-cont-two">
+            <div class="contener-small-two">
+                <h5 class="text-five-two">ConsectUltricies</h5>
+                <h2 class="text-two-two">Amet Ipsum</h2>
+                <p class="text-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+        </div>
+        <div class="contener-three">
+            <div class="contener-small-three">
+            <h5 class="text-five-three">Aenean Consectetur Porta</h5>
+            <h2 class="text-two-three">Magna Porta Sit <br> Bibendum</h2>
+            <p class="text-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+            <img src="./images/image-5.jpg" alt=""   width="558" height="508" class="img-cont-one">
+        </div>
+        <div class="contener-four">
+            <ul class="advantages-list">
+                <li class="advantages-list-item item">
+                    <div class="contener-svg">
+                        <svg width="80" height="35">
+                            <use class="" href="./images/icons.svg#icon-svg-1"></use>
+                        </svg>
+                    </div>
+                    <h4 class="text-svg-one">Activity Notifications</h4>
+                    <p class="text-paragraph-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                </li>
+                <li class="advantages-list-item item">
+                    <div class="contener-svg">
+                        <svg width="74" height="35">
+                            <use class="" href="./images/icons.svg#icon-svg-2"></use>
+                        </svg>
+                    </div>
+                    <h4 class="text-svg-one">Custom Timing</h4>
+                    <p class="text-paragraph-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                </li>
+                <li class="advantages-list-item">
+                    <div class="contener-svg">
+                        <svg width="40" height="35">
+                            <use class="" href="./images/icons.svg#icon-svg-3"></use>
+                        </svg>
+                    </div>
+                    <h4 class="text-svg-one">Mobile Optimized</h4>
+                    <p class="text-paragraph-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                </li>
+            </ul>
+        </div>
+       <div class="contener-five">
+            <ul class="advantages-five">
+                <li class="item">
+                    <h2 class="text-contener-five">+12k</h2>
+                    <h4 class="text-svg-two">Nibh Elit Tristique</h4>
+                </li>
+                <li class="item">
+                    <h2 class="text-contener-five">84</h2>
+                    <h4 class="text-svg-two">Aenean Condimentum</h4>
+                </li>
+                <li class="item">
+                    <h2 class="text-contener-five">3,07</h2>
+                    <h4 class="text-svg-two">Quam Inceptos</h4>
+                </li>
+                <li>
+                    <h2 class="text-contener-five">24h</h2>
+                    <h4 class="text-svg-two-last">Ullamcorper</h4>
+                </li>
+            </ul>
+       </div>
+       <div class="contener-six">
+        <div class="contener-small-six">
+        <h5 class="text-five-six">Aenean Consectetur Porta</h5>
+        <h2 class="text-two-six">Sem Risus Elit Vestibulum</h2>
+        <p class="text-paragraph-six">Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, 
+            nisi erat porttitor ligula, eget lacinia odio sem nec elit. <b class="bold">Cras mattis consectetur</b> purus sit amet fermentum. 
+            Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+        </div>
+        <img src="./images/image-7.jpg" alt=""   width="558" height="414" class="img-cont-one">
+    </div>
+    <div class="contener-six contener-six-two">
+        <img src="./images/image-6.jpg" alt=""   width="558" height="414" class="img-cont-two">
+        <div class="contener-small-seven">
+            <h5 class="text-five-six">Aenean Consectetur Porta</h5>
+            <h2 class="text-two-seven">Parturient Tortor</h2>
+            <p class="text-paragraph-six">Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, 
+                nisi erat porttitor ligula, eget lacinia odio sem nec elit. <b class="bold">Cras mattis consectetur</b> purus sit amet fermentum. 
+                Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.
+            </p>
+        </div>
+    </div>
+    <div class="contener-seven">
+        <div class="contener-small-seven-one">
+            <div class="contener-svg">
+                <svg width="58" height="54">
+                    <use  href="./images/icons.svg#icon-svg-4"></use>
+                </svg>
+            </div>
+            <h4 class="text-four-four">HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, 
+                nisi erat porttitor ligula, eget lacinia odio sem nec elit. Pus sit amet fermentum. 
+                Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.ing
+            </h4>
+            <p class="text-paragraph-four">Joshua Home <span class="dash">&mdash;</span> <b>New York Times</b></p>
+        </div>
+        <div class="points">
+            <div class="points-one">
+            <svg width="7" height="7">
+                <use href="./images/icons.svg#icon-svg-5"></use>
+            </svg>
+            </div>
+            <div class="points-two">
+            <svg width="7" height="7">
+                <use href="./images/icons.svg#icon-svg-6"></use>
+            </svg>
+            </div>
+        </div>
+        <div class="img-svg">
+            <img src="./images/image-9.svg" alt=""   width="1296" height="115" >
+        </div>
+    </div>
+    </section>
     <section class="phons"></section>
-    <section></section>
-    <section></section>
-    <footer></footer>
+    <section class="started">
+        <div class="small-started">
+            <h2 class="text-two-started">Ready to get started?</h2>
+            <div class="started-button">
+                <button type="button" class="started-button-one">Download Now</button>
+                <button type="button" class="started-button-two">Get in Touch</button>
+            </div>
+        </div>
+    </section>
+    <section class="over-footer">
+        <div class="small-over-footer">
+            <h2 class="text-over-footer">Get updates from Richard</h2>
+            <h5 class="five-over-footer">New course alerts, discounts and free lessons</h5>
+            <div class="over-footer-button">
+                <button type="button" class="over-footer-button-one">Enter your ema</button>
+                <button type="button" class="over-footer-button-two">Subscribe</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="sochial-small">
+            <button class="sochial-svg"><img src="./images/svg-7.svg" width="138" height="104"></button>
+            <ul class="sochial">
+                <li class="section-link">Email</li>
+                <li class="section-link">Instagram</li>
+                <li class="section-link">Facebook</li>
+                <li class="section-link">Facebook</li>
+                <li class="section-link">Twitter</li>
+                <li class="section-link">Image License Info</li>
+                <li class="section-link">Powered by Webflow</li>
+            </ul>
+        </div>
+    </footer>
     <script src="./js/app.js"></script>
 </body>
 </html>
